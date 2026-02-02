@@ -8,7 +8,7 @@ fi
 echo "installing nginx" 
 dnf reinstall nginx -y
 
- if [ $? -ne 0 ]; then
+ if [ "$?" -ne 0 ]; then
     echo "nginx reinstall failed"
     exit 1
     else
