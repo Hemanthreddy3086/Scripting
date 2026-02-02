@@ -1,7 +1,12 @@
 #!/bin/bash
 NUMBER=$1
 
-
 if [ $NUMBER > 20 ]; then
     echo "number is $NUMBER greater than 20"
+    elif [ $NUMBER = 20 ]; then
+
+     echo "number is $NUMBER equal 20"
+     else
+
+    echo "number is $NUMBER less than 20"
 fi
