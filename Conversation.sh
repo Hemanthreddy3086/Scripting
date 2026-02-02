@@ -1,7 +1,8 @@
 #!/bin/bash
-
-echo "Suresh Hello! How can I assist you today?"
-echo "ramesh You can ask me about the weather, news, or general questions."
-echo "Suresh Type 'exit' to end the conversation."
-echo "ramesh exit the script"
-echo "Suresh Goodbye!"
+PERSON1="Suresh"
+PERSON2="ramesh"
+echo "$PERSON1 Hello! How can I assist you today?"
+echo "$PERSON2 You can ask me about the weather, news, or general questions."
+echo "$PERSON1 Type 'exit' to end the conversation."
+echo "$PERSON2 exit the script"
+echo "$PERSON1 Goodbye!"
