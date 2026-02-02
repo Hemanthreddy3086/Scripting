@@ -1,6 +1,6 @@
 #!/bin/bash
 PERSON1="$1"
-PERSON2="$"
+PERSON2="$2"
 echo "$PERSON1 Hello! How can I assist you today?"
 echo "$PERSON2 You can ask me about the weather, news, or general questions."
 echo "$PERSON1 Type 'exit' to end the conversation."
