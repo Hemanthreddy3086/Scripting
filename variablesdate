@@ -3,6 +3,6 @@ STARTIME=$(date +%s )
 echo "script execute at time stamp $STARTIME"
 sleep 10
 ENDTIME=$(date +%s )
-TOTAL_TIME=(($ENDTIME-$STARTIME))
+TOTAL_TIME=$(($ENDTIME-$STARTIME))
 echo "script is executed at $TOTAL_TIME"
 
