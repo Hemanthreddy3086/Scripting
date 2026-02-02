@@ -1,0 +1,3 @@
+#!/bin/bash
+TIMESTAMP=$(date )
+echo "script execute at time stamp $TIMESTAMP"
