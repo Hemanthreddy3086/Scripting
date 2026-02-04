@@ -15,13 +15,13 @@ statuscheck (){
         echo "$2 ....successfully"
     fi
 }
-echo "installing nginx" &>>${LOGS_file}
-dnf install nginx -y
+echo "installing nginx" 
+dnf install nginx -y &>> $LOGS_file
     statuscheck $? "nginx"
 
- dnf install mysql -y &>>${LOGS_file}
+ dnf install mysql -y &>> $LOGS_file
     statuscheck $? "mysql"
 
-dnf install nodejs -y &>>${LOGS_file}
+dnf install nodejs -y &>> $LOGS_file
     statuscheck $? "nodejs"
      
