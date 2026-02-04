@@ -14,7 +14,7 @@ statuscheck (){
     fi
 }
 echo "installing nginx" 
-dnf install nginxx -y
+dnf install nginx -y
     statuscheck $? "nginx"
 
  dnf install mysqll -y
