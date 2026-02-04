@@ -14,12 +14,12 @@ statuscheck (){
     fi
 }
 echo "installing nginx" 
-dnf install nginx -y
+dnf install nginxx -y
     statuscheck $? "nginx"
 
- dnf install mysql -y
+ dnf install mysqll -y
     statuscheck $? "mysql"
 
-dnf install nodejs -y
+dnf install nodejss -y
     statuscheck $? "nodejs"
      
