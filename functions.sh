@@ -17,9 +17,9 @@ echo "installing nginx"
 dnf install nginx -y
     statuscheck $? "nginx"
 
- dnf install mysqll -y
+ dnf install mysql -y
     statuscheck $? "mysql"
 
-dnf install nodejss -y
+dnf install nodejs -y
     statuscheck $? "nodejs"
      
