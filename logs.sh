@@ -1,11 +1,13 @@
 #!/bin/bash
 USERID=$(id -u )
 LOGS_FOLDER="/var/log/shell"
-LOGS_file="/var/log/shell$0.Log"
+LOGS_fILE="/var/log/shell$0.Log"
 
 if [ $USERID -ne 0 ]; then
    echo "please run this script as root user"
    exit 1
+   
+mkdir -p $LOGS_FOLDER
 fi 
 statuscheck (){
     if [ "$1" -ne 0 ]; then
@@ -16,12 +18,12 @@ statuscheck (){
     fi
 }
 echo "installing nginx" 
-dnf install nginx -y &>> $LOGS_file
+dnf install nginx -y &>> $LOGS_fILE
     statuscheck $? "nginx"
 
- dnf install mysql -y &>> $LOGS_file
+ dnf install mysql -y &>> $LOGS_fILE
     statuscheck $? "mysql"
 
-dnf install nodejs -y &>> $LOGS_file
+dnf install nodejs -y &>> $LOGS_fILE
     statuscheck $? "nodejs"
      
